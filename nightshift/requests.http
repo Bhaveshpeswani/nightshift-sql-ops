@@ -1,0 +1,25 @@
+### Create production server
+
+POST http://localhost:8080/api/servers
+Content-Type: application/json
+
+{
+  "hostname": "db-payments-01",
+  "environment": "PROD"
+}
+
+
+### Create test server
+
+POST http://localhost:8080/api/servers
+Content-Type: application/json
+
+{
+  "hostname": "db-payments-test",
+  "environment": "TEST"
+}
+
+
+### Get all servers
+
+GET http://localhost:8080/api/servers
