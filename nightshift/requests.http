@@ -1,6 +1,6 @@
 ### Open incident
 
-POST http://localhost:8080/api/servers/1/incidents
+POST http://localhost:8080/api/servers/2/incidents
 Content-Type: application/json
 
 {
@@ -21,6 +21,7 @@ PATCH http://localhost:8080/api/incidents/1/resolve
 ### Check servers
 
 GET http://localhost:8080/api/servers
+
 
 ### Incident summary report
 
