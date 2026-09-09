@@ -1,25 +1,23 @@
-### Create production server
+### Open incident
 
-POST http://localhost:8080/api/servers
+POST http://localhost:8080/api/servers/1/incidents
 Content-Type: application/json
 
 {
-  "hostname": "db-payments-01",
-  "environment": "PROD"
+  "title": "Database response time is high"
 }
 
 
-### Create test server
+### Get open incidents
 
-POST http://localhost:8080/api/servers
-Content-Type: application/json
-
-{
-  "hostname": "db-payments-test",
-  "environment": "TEST"
-}
+GET http://localhost:8080/api/incidents/open
 
 
-### Get all servers
+### Resolve incident
+
+PATCH http://localhost:8080/api/incidents/1/resolve
+
+
+### Check servers
 
 GET http://localhost:8080/api/servers
