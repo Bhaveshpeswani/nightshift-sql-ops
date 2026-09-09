@@ -21,3 +21,7 @@ PATCH http://localhost:8080/api/incidents/1/resolve
 ### Check servers
 
 GET http://localhost:8080/api/servers
+
+### Incident summary report
+
+GET http://localhost:8080/api/reports/open-incidents
